@@ -57,11 +57,11 @@ class _body extends State<bodyt> {
             List<exercicio>? set = tolist(snapshot.data);
             switch (snapshot.connectionState) {
               case ConnectionState.none:
-                return Text('sem dados');
+                return Text('espera');
               case ConnectionState.waiting:
-                return Text('espera porra');
+                return Text('espera');
               case ConnectionState.active:
-                return Text('so deus sabe oque ta acontecendo aqui');
+                return Text('espera');
               case ConnectionState.done:
                 print(set);
                 return RefreshIndicator(
